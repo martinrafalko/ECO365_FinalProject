@@ -1,31 +1,5 @@
-#Load API and access key; might have to install "alphavantager" package
-#May have to hit run a few times before it prints the correct output
-library(alphavantager)
-av_api_key("KPS1XQIF90AH8KWC")
+Change the value of x to a stock ticker symbol to analyze. 
 
+The Aroon indicator is a technical indicator that is used to identify trend changes in the price of an asset, as well as the strength of that trend. In essence, the indicator measures the time between highs and the time between lows over a time period. The idea is that strong uptrends will regularly see new highs, and strong downtrends will regularly see new lows. The indicator signals when this is happening, and when it isn't. https://www.investopedia.com/terms/a/aroon.asp#:~:text=advisor%20(CTA).-,What%20Is%20the%20Aroon%20Indicator%3F,lows%20over%20a%20time%20period.
 
-#Specify stock ticker symbol(All caps) you want to look up as x, in quotes
-#Examples: TSLA(Tesla), SPCE(Virgin Galactic), AMZN(Amazon), CGC(Canopy Growth Corp)
-x <- ""
-
-#Daily AROON technical indicator, with 7 data points(7 days)
-ti_aroon <-  av_get(symbol = x,
-       av_fun      = "AROON",
-       interval    = "daily",
-       time_period = 7,
-       outputsize  = "full")
-
-#Daily AD technical indicator
-ti_ad <-  av_get(symbol = x,
-                   av_fun      = "AD",
-                   interval    = "daily",
-                   outputsize  = "full")
-
-#Neutral = no strong indication of price movement; Bullish = price trending upwards; bearish = trending downwards
-if (mean(tin$aroon_up) > mean(tin$aroon_down) & mean(ti_ad$chaikin_a_d) > 0){
-  print("Bullish")
-} else if(mean(tin$aroon_up) < mean(tin$aroon_down) & mean(ti_ad$chaikin_a_d) < 0){
-  print("Bearish")
-} else{
-  print("Neutral")
-}
+The accumulation/distribution indicator (A/D) is a cumulative indicator that uses volume and price to assess whether a stock is being accumulated or distributed. The A/D measure seeks to identify divergences between the stock price and the volume flow. This provides insight into how strong a trend is. https://www.investopedia.com/terms/a/accumulationdistribution.asp#:~:text=The%20accumulation%2Fdistribution%20indicator%20(A%2FD)%20is%20a,how%20strong%20a%20trend%20is.
