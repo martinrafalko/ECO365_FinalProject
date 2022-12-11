@@ -1,4 +1,6 @@
-Made and ran in RStudio. Likely won't work on replit. Change the value of x to a stock ticker symbol to analyze. This program checks for the combination of a positive aroon value and positive a/d value(bullish), both being negative(bearish) or neither(neutral). Finding a "bullish" stock is difficult but possible. Most stocks I've looked up have been "neutral" or "bearish."  This program is not meant for the purpose of providing investment advice. 
+Made and ran in RStudio. Likely won't work on replit. Download zip file after pressing "code," then extract and open with RStudio.
+
+Change the value of x to a stock ticker symbol to analyze. This program checks for the combination of a positive aroon value and positive a/d value(bullish), both being negative(bearish) or neither(neutral). Finding a "bullish" stock is difficult but possible. Most stocks I've looked up have been "neutral" or "bearish."  This program is not meant for the purpose of providing investment advice. 
 
 Aroon has an "up" value and a "down" value. If the Aroon-Up crosses above the Aroon-Down, then a new uptrend may start soon. Conversely, if Aroon-Down crosses above the Aroon-Up, then a new downtrend may start.
 
