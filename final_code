@@ -6,7 +6,7 @@ av_api_key("KPS1XQIF90AH8KWC")
 
 #Specify stock ticker symbol(All caps) you want to look up as x, in quotes
 #Examples: "TSLA"(Tesla), "SPCE"(Virgin Galactic), "AMZN"(Amazon), "CGC"(Canopy Growth Corp)
-x <- ""
+x <- "TSLA"
 
 #Daily AROON technical indicator, with 7 data points(7 days)
 ti_aroon <-  av_get(symbol = x,
