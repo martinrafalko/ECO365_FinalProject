@@ -22,9 +22,9 @@ ti_ad <-  av_get(symbol = x,
                    outputsize  = "full")
 
 #Neutral = no strong indication of price movement; bullish = price trending upwards; bearish = trending downwards
-if (mean(tin$aroon_up) > mean(tin$aroon_down) & mean(ti_ad$chaikin_a_d) > 0){
+if (mean(ti_aroon$aroon_up) > mean(ti_aroon$aroon_down) & mean(ti_ad$chaikin_a_d) > 0){
   print("Bullish")
-} else if(mean(tin$aroon_up) < mean(tin$aroon_down) & mean(ti_ad$chaikin_a_d) < 0){
+} else if(mean(ti_aroon$aroon_up) < mean(ti_aroon$aroon_down) & mean(ti_ad$chaikin_a_d) < 0){
   print("Bearish")
 } else{
   print("Neutral")
