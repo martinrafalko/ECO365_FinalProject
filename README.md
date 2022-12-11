@@ -1,4 +1,4 @@
-Made and ran in RStudio. Likely won't work on replit. Download zip file after pressing "code," then extract and open "code.R" with RStudio.
+Made and ran in RStudio. Likely won't work on replit. Download zip file after pressing "code," then extract the files, and open "code.R" with RStudio.
 
 Change the value of x to a stock ticker symbol to analyze. This program checks for the combination of a positive aroon value and positive a/d value(bullish), both being negative(bearish) or neither(neutral). Finding a "bullish" stock is difficult but possible. Most stocks I've looked up have been "neutral" or "bearish."  This program is not meant for the purpose of providing investment advice. 
 
