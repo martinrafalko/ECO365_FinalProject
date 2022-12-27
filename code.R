@@ -1,7 +1,7 @@
 #Load API and access key; make sure to have installed "alphavantager" package
 #May have to hit run a few times before it prints the correct output
 library(alphavantager)
-av_api_key("KPS1XQIF90AH8KWC")
+av_api_key("")
 
 
 #Specify stock ticker symbol(All caps) you want to look up as x, in quotes
